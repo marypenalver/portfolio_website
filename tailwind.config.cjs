@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['var(--font-charm)', 'sans-serif'],
+        heading: ['var(--font-bakbak)', 'sans-serif'],
         body: ['var(--font-lato)', 'sans-serif'],
       },
     },

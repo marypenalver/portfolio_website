@@ -1,13 +1,17 @@
 import '../styles/globals.css';
-import { Cinzel, Lato, Charm, DM_Serif_Text } from 'next/font/google';
+import { Bakbak_One, Cinzel, Lato, Charm, DM_Serif_Text } from 'next/font/google';
 import Navbar from '../components/Navbar';
 
-// const cinzel = Cinzel({
-//   subsets: ['latin'],
-//   weight: ['400', '500', '700'],
-//   variable: '--font-cinzel',
-// });
-
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-cinzel',
+});
+const backbak = Bakbak_One({
+  subsets:['latin'],
+  weight: ['400'],
+  variable: '--font-bakbak',
+});
 const lato = Lato({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -16,7 +20,7 @@ const lato = Lato({
 const dm = DM_Serif_Text({
   subsets: ['latin'],
   weight: ['400'],
-  variable: '--font-lato',
+  variable: '--font-dm',
 })
 
 const charm = Charm({
@@ -27,7 +31,7 @@ const charm = Charm({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${charm.variable} ${dm.variable}`}>
+    <main className={`${backbak.variable} ${cinzel.variable}`}>
       <Navbar/>
       <Component {...pageProps} />
     </main>
