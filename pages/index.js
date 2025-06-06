@@ -19,7 +19,6 @@ export default function Home() {
     'isa15.jpg',
     'isa19.jpg',
   ];
-  
 
   return (
     <main className="min-h-screen px-6 py-10 bg-white text-gray-900">
