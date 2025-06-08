@@ -6,28 +6,32 @@ const Image = _Image.default || _Image;
 
 export default function Home() {
   const photos = [
-    '/portraits/isa/isa10.jpg',        // landscape, goes early
-    '/portraits/isa/isa13.jpg',       // landscape, goes early
-    '/portraits/isa/isa23.jpg',
-    '/portraits/isa/isa2.jpg',
-    '/portraits/isa/isa3.jpg',
-    '/portraits/isa/isa21.jpg',
-    '/portraits/isa/isa11.jpg', //h
-    '/portraits/isa/isa5.jpg',
-    '/portraits/isa/isa32.jpg',
-    '/portraits/isa/isa30.jpg',
-    '/portraits/isa/isa33.jpg',
-    '/portraits/isa/isa7.jpg', //h
-    '/portraits/isa/isa20.jpg',
-    '/portraits/isa/isa15.jpg',
-    '/portraits/isa/isa19.jpg',
-    '/portraits/isa/beach.jpg',
-    '/portraits/lasting_impressions/chassan2.jpg',  //h
-    '/portraits/lasting_impressions/chassan6.jpg',  //h
+  //----------------Maybes------------
+    //'/portraits/isa/isa10.jpg',        // landscape, goes early
+    //'/portraits/isa/isa11.jpg', //h
+    //'/portraits/isa/isa23.jpg',
+    //'/portraits/lasting_impressions/chassan2.jpg',  //h
     //'/portraits/lasting_impressions/chassan10.jpg', //h
+    //'/portraits/isa/isa20.jpg',
+    '/portraits/isa/isa13.jpg',      
+  
+    //'/portraits/isa/isa30.jpg',
+    '/portraits/isa/isa33.jpg',
+    '/portraits/isa/isa21.jpg',
+    '/portraits/isa/isa19.jpg',
+    '/portraits/isa/isa32.jpg',
+    '/portraits/lasting_impressions/chassan6.jpg',  //h
     '/portraits/lasting_impressions/chassan7.jpg',
     '/portraits/lasting_impressions/chassan20.jpg',  
-    
+    '/portraits/isaO.jpg',  
+    '/portraits/lastMillenium1.jpg', 
+    '/portraits/lastMillenium2.jpg',  
+    '/portraits/strike_rw24/tux.jpg', 
+    '/portraits/sink1.jpg',
+    '/portraits/isa/beach.jpg',
+    '/portraits/shannon-15.jpg', 
+    '/portraits/strike_rw24/celine.jpg', 
+    '/portraits/strike_rw24/netguy.jpg', 
   ];
   const [isOpen,setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -35,14 +39,14 @@ export default function Home() {
   return (
     <main className="min-h-screen px-6 py-10 bg-white text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
-      <section className="columns-2 md:columns-3 gap-4">
+      <section className="columns-3 md:columns-4 gap-12">
         {photos.map((photo, i) => (
         <img
             
             key={i}
             src={`/images/${photo}`}
             alt={`gallery-photo-${i}`}
-            className="mb-4 w-full cursor-pointer rounded-lg"
+            className="mb-12 w-full cursor-pointer "
             onClick={() => {
               setIndex(i);
               setIsOpen(true);

@@ -31,13 +31,15 @@ export default function Graduation() {
 
   return (
     <main className="min-h-screen px-6 py-10 bg-white text-gray-900">
-      <section className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
+      <section className="columns-3 md:columns-4 gap-12">
         {photos.map((photo, i) => (
         <img
+            
             key={i}
             src={`/images/${photo}`}
             alt={`gallery-photo-${i}`}
-            className="cursor-pointer rounded-lg object-cover"
+            className="mb-12 w-full cursor-pointer "
             onClick={() => {
               setIndex(i);
               setIsOpen(true);
