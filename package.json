@@ -11,7 +11,8 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
