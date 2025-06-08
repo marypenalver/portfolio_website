@@ -4,30 +4,30 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #090909;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #ffffff;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: black;
   font-family: var(--font-cinzel);
 }
 
 h1{
   background: var(--background);
-  color: var(--foreground);
+  color: black;
   font-family: var(--font-bakbak);
 }
 
 a {
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
