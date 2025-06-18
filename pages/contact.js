@@ -9,6 +9,9 @@ export default function Contact() {
                 <p>Phone: (786) 774-7552</p>
                 <p>Email: marypenalverop@gmail.com</p>
             </div>
+            <form>
+                
+            </form>
             <div className="flex justify-center">
                 <Image
                     src="/images/street/double_exposure/dbExposure25.jpg"

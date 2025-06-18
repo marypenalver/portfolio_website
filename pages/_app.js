@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { Bakbak_One, Cinzel, Lato, Charm, DM_Serif_Text } from 'next/font/google';
 import Navbar from '../components/Navbar';
+import Head from 'next/head';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -31,9 +32,14 @@ const charm = Charm({
 
 export default function App({ Component, pageProps }) {
   return (
+    <>
+    <Head>
+      <link rel="icon" href="favicon.ico" />
+    </Head>
     <main className={`${backbak.variable} ${cinzel.variable}`}>
       <Navbar/>
       <Component {...pageProps} />
     </main>
+    </>
   );
 }

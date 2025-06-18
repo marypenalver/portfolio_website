@@ -16,22 +16,29 @@ export default function Home() {
     '/portraits/isa/isa13.jpg',      
   
     //'/portraits/isa/isa30.jpg',
-    '/portraits/isa/isa33.jpg',
+    //'/portraits/isa/isa33.jpg',
     '/portraits/isa/isa21.jpg',
     '/portraits/isa/isa19.jpg',
-    '/portraits/isa/isa32.jpg',
+    //'/portraits/isa/isa32.jpg',
     '/portraits/lasting_impressions/chassan6.jpg',  //h
-    '/portraits/lasting_impressions/chassan7.jpg',
     '/portraits/lasting_impressions/chassan20.jpg',  
-    '/portraits/isaO.jpg',  
-    '/portraits/lastMillenium1.jpg', 
-    '/portraits/lastMillenium2.jpg',  
     '/portraits/strike_rw24/tux.jpg', 
+    '/portraits/isa/isaBeach.jpg',
+    '/portraits/strike_rw24/netguy.jpg',
+    '/portraits/lastMillenium1.jpg', 
+    //'/portraits/lastMillenium2.jpg', 
+    '/portraits/lasting_impressions/chassan7.jpg', 
     '/portraits/sink1.jpg',
     '/portraits/isa/beach.jpg',
+    '/portraits/ariel.jpg',
     '/portraits/shannon-15.jpg', 
-    '/portraits/strike_rw24/celine.jpg', 
-    '/portraits/strike_rw24/netguy.jpg', 
+    '/portraits/strike_rw24/celine.jpg',  
+    '/portraits/ariel2.jpg',
+    '/portraits/isaO.jpg',
+    '/portraits/osotc.jpg',
+    '/portraits/cassidy.jpg',
+    '/portraits/tyriq.jpg',
+    '/portraits/knight1.jpg'
   ];
   const [isOpen,setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);

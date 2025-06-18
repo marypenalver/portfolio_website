@@ -2,9 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/about": "pages/about.js",
-  "/graduation": "pages/graduation.js",
-  "/": "pages/index.js",
-  "/street": "pages/street.js"
+  "/": "pages/index.js"
 }
