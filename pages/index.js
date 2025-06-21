@@ -22,15 +22,16 @@ export default function Home() {
     '/portraits/lasting_impressions/chassan16.jpg',  //h
     '/portraits/lasting_impressions/chassan20.jpg',  
     '/portraits/strike_rw24/tux.jpg', 
-    '/portraits/isaO.jpg',      
+    '/portraits/isaO.jpg',   
+    '/portraits/betweenlines2.jpg',         
     '/portraits/strike_rw24/netguy.jpg',
     '/portraits/knight1.jpg',
     '/portraits/tyriq.jpg',
-    //'/portraits/lastMillenium2.jpg', 
     '/portraits/lasting_impressions/chassan7.jpg', 
     '/portraits/sink1.jpg',
-    '/portraits/osotc.jpg',     ///
+    '/portraits/osotc.jpg',    
     '/portraits/shannon-15.jpg', 
+    '/portraits/betweenlines.jpg', 
     '/portraits/shannon-6.jpg', 
     '/portraits/strike_rw24/celine.jpg', 
     '/portraits/isabeach2.jpg', 
@@ -45,6 +46,7 @@ export default function Home() {
     '/portraits/isabeach.jpg',
     '/portraits/isabeach3.jpg',
     '/portraits/osotc2.jpg',
+    '/portraits/lastMillenium2.jpg'
     
 
   ];
