@@ -9,17 +9,36 @@ export default function Street() {
   //----------------Maybes------------
   '/street/manwaiting.jpg',
  // '/street/double_exposure/dbExposure5.jpg',
+ 
+ '/street/chinatown.jpg',
   '/street/double_exposure/dbExposure8.jpg',
   '/street/double_exposure/dbExposure21.jpg',
   //'/street/double_exposure/dbExposure25.jpg',
   '/street/double_exposure/dbExposure29.jpg',
+  '/street/violin.jpg',
+  '/street/jax.jpg',
+  '/street/chinatown2.jpg',
+  '/street/max.jpg',
   '/street/double_exposure/dbExposure30.jpg',
+  
+  '/street/firefighter.jpg',
+  '/street/nyc-2.jpg',
+  '/street/greece.jpg',
+  '/street/sherrif.jpg',
+  '/street/cascade.jpg',
   '/street/double_exposure/dbExposure9.jpg',
+  '/street/skate.jpg',
+  '/street/baby.jpg',
+  '/street/subway-2.jpg',
   '/street/double_exposure/dbExposure31.jpg',
+  '/street/sherrif2.jpg',
+  '/street/sax.jpg',
   '/street/double_exposure/dbExposure33.jpg',
+  '/street/skatemom.jpg',
+  '/street/nyc.jpg',
   '/street/double_exposure/dbExposure35.jpg',
-  '/street/photo1.jpg',
-  '/street/photo2.jpg',
+
+
   ];
   const [isOpen,setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
