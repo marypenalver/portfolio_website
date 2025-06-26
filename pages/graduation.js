@@ -30,7 +30,7 @@ export default function Graduation() {
   const [index, setIndex] = useState(0);
 
   return (
-    <main className="min-h-screen px-6 py-10 bg-white text-gray-900">
+    <main className="pt-32 min-h-screen px-6 py-10 bg-white text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
       <section className="columns-3 md:columns-4 gap-12">
         {photos.map((photo, i) => (

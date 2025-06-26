@@ -34,7 +34,7 @@ export default function Street() {
   '/street/sax.JPG',
   '/street/train.jpg',
   '/street/double_exposure/dbExposure33.jpg',
-  '/street/skatemom.JPG',
+  '/street/skatemom.',
   '/street/nyc.JPG',
   '/street/double_exposure/dbExposure35.jpg',
   '/street/double_exposure/dbExposure5.jpg',
@@ -45,7 +45,7 @@ export default function Street() {
   const [index, setIndex] = useState(0);
   
   return (
-    <main className="min-h-screen px-6 py-10 bg-white text-gray-900">
+    <main className="pt-20 min-h-screen px-6 py-10 bg-white text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
       <section className="columns-3 md:columns-4 gap-12">
         {photos.map((photo, i) => (

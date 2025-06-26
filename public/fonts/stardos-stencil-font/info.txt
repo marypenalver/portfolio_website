@@ -1,0 +1,2 @@
+﻿license: SIL Open Font License (OFL)
+link: https://www.fontspace.com/stardos-stencil-font-f12471

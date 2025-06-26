@@ -3,35 +3,97 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
   --foreground: #090909;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
     --foreground: #ffffff;
   }
 }
 
+/* Reset html, body, and root wrapper to be fully transparent and tall */
+html, body, #__next {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
-  background: var(--background);
   color: black;
   font-family: var(--font-cinzel);
 }
 
-h1{
-  background: var(--background);
+h1 {
   color: black;
   font-family: var(--font-bakbak);
 }
 
+/* Anchor styles */
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: rgb(81, 79, 79);
 }
 
+/* Form styles */
+form {
+  color: rgb(0, 0, 0);
+}
+
+nav,
+nav *,
+.nav-wrapper {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+@font-face {
+  font-family: 'Now';
+  src: url('/fonts/now.alt-black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dropline';
+  src: url('/fonts/dropline.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'logam';
+  src: url('/fonts/logam.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ougkeh';
+  src: url('/fonts/ougkeh.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stardos';
+  src: url('/fonts/stardos.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stardos_bold';
+  src: url('/fonts/stardos_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ougkeh_round';
+  src: url('/fonts/ougkeh_round.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
