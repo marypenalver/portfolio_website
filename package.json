@@ -12,6 +12,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "resend": "^4.6.0",
     "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {

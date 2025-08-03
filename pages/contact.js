@@ -1,31 +1,65 @@
 import _Image from 'next/image';
+import {useState} from 'react';
+
 const Image = _Image.default || _Image;
 
+
+
 export default function Contact() {
+    // state variables
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();             //won't refresh the page
+
+        const res = await fetch('api/contact',{
+            method:'POST',
+            headers:{'Content-Type' : 'application/json'},
+            body: JSON.stringify({name, email, message}),
+        });
+
+        if(res.ok){
+            alert('Message sent!');
+            setName(' ');
+            setEmail(' ');
+            setMessage(' ');
+        }
+        else
+            alert('Failed to send message.');
+    }
+
   return (
     <main className="relative flex min-h-screen font-body text-black">
       {/* Left side: Contact info & form */}
       <div className="relative flex-1 bg-[#ffffff] text-black flex flex-col justify-center items-center ">
         {/* Centered CONTACT title */}
-        <h1 className="flex justify-center items-center text-9xl font-now mb-12">CONTACT</h1>
+        <h1 className="flex justify-center items-center text-2xl font-now mb-3">CONTACT</h1>
 
         {/* Form */}
-        <form className=" text-xs flex flex-col gap-2 w-[400px]">
+        <form onSubmit={handleSubmit} className=" text-xs flex flex-col gap-2 w-[400px]">
           <input
             type="text"
             placeholder="[ YOUR NAME ]"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="font-dropline bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"
           />
           <input
             type="text"
             placeholder="[ YOUR EMAIL ]"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="font-dropline bg-transparent  p-1 text-center text-black placeholder-black focus:outline-none"
           />
           <textarea
             placeholder="[ YOUR MESSAGE ]"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="font-dropline bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"
           />
-          <button className="font-dropline bg-transparent  p-1 text-center text-black rounded hover:bg-black hover:text-white transition">
+          <button type="submit" className="font-dropline bg-transparent  p-1 text-center text-black rounded hover:bg-black hover:text-white transition">
             SEND
           </button>
         </form>
@@ -38,10 +72,10 @@ export default function Contact() {
       {/* Right side: Background image */}
       <div className="relative flex-1 min-h-screen overflow-hidden">
         <Image
-          src="/images/street/cheeks.JPG"
+          src="/images/portraits/isa/isa23.jpg"
           fill
           alt="Background"
-          className="object-cover object-[9%_50%]"
+          className="object-cover object-[25%_50%]"
         />
       </div>
     </main>
