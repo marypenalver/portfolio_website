@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <main className="relative flex min-h-screen font-body text-black">
       {/* Left side: Contact info & form */}
-      <div className="relative flex-1 bg-[#ffffff] text-black flex flex-col justify-center items-center ">
+      <div className="relative flex-1 bg-[#F5F5F5] text-black flex flex-col justify-center items-center ">
         {/* Centered CONTACT title */}
         <h1 className="flex justify-center items-center text-2xl font-now mb-3">CONTACT</h1>
 
@@ -59,7 +59,7 @@ export default function Contact() {
             onChange={(e) => setMessage(e.target.value)}
             className="font-dropline bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"
           />
-          <button type="submit" className="font-dropline bg-transparent  p-1 text-center text-black rounded hover:bg-black hover:text-white transition">
+          <button type="submit" className="font-dropline bg-transparent  p-1 text-center text-black rounded hover:bg-#F5F5F5 hover:text-black transition">
             SEND
           </button>
         </form>

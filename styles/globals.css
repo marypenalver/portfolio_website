@@ -4,17 +4,18 @@
 
 :root {
   --foreground: #090909;
+  --background: #FAF5ED;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #ffffff;
+    --foreground: #FAF5ED;
   }
 }
 
 /* Reset html, body, and root wrapper to be fully transparent and tall */
 html, body, #__next {
-  background-color: transparent !important;
+  background-color: #F5F5F5 !important;
   margin: 0;
   padding: 0;
   height: 100%;
