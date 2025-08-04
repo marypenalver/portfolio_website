@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import { Analytics } from "@vercel/analytics/next"
 import { Atkinson_Hyperlegible, Bakbak_One, Cinzel, Lato, Charm, DM_Serif_Text } from 'next/font/google';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
