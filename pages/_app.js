@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }) {
         </div>
 
         {/* ✅ Fixed frame applied here */}
-        <div className="w-[1440px] min-h-screen mx-auto overflow-auto">
+        <div className="min-h-screen mx-auto overflow-auto w-full lg:w-[1440px]">
           <Component {...pageProps} />
         </div>
       </div>
