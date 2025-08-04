@@ -41,15 +41,17 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="favicon.ico" />
       </Head>
 
-      {/* Font variables apply globally here */}
+      {/* Apply font variables globally */}
       <div className={`${backbak.variable} ${atkinson.variable} ${cinzel.variable} ${lato.variable} ${dm.variable} ${charm.variable}`}>
         {/* Isolated wrapper for navbar transparency */}
         <div className="nav-wrapper">
           <Navbar />
         </div>
 
-        {/* Main app content */}
-        <Component {...pageProps} />
+        {/* ✅ Fixed frame applied here */}
+        <div className="w-[1440px] min-h-screen mx-auto overflow-auto">
+          <Component {...pageProps} />
+        </div>
       </div>
     </>
   );
