@@ -60,7 +60,6 @@ export default function Street() {
     width={800}
     height={1200}
     className={`mb-12 w-full cursor-pointer h-auto opacity-0 transition-opacity duration-700 ease-in-out ${loaded[i] ? 'opacity-100' : ''}`}
-    style={{ transitionDelay: `${i * 100}ms` }}
     onClick={() => {
       setIndex(i);
       setIsOpen(true);

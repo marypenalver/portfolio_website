@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Atkinson_Hyperlegible, Bakbak_One, Cinzel, Lato, Charm, DM_Serif_Text } from 'next/font/google';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import {useRouter} from 'next/router';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -36,6 +37,8 @@ const atkinson = Atkinson_Hyperlegible({
 });
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+  const hideNavbarRoutes = ['/'];
   return (
     <>
       <Head>
@@ -45,10 +48,11 @@ export default function App({ Component, pageProps }) {
       {/* Apply font variables globally */}
       <div className={`${backbak.variable} ${atkinson.variable} ${cinzel.variable} ${lato.variable} ${dm.variable} ${charm.variable}`}>
         {/* Isolated wrapper for navbar transparency */}
+        {!hideNavbarRoutes.includes(router.pathname) && (
         <div className="nav-wrapper">
           <Navbar />
         </div>
-
+        )}
         {/* ✅ Fixed frame applied here */}
         <div className="min-h-screen mx-auto overflow-auto w-full lg:w-[1440px]">
           <Component {...pageProps} />
