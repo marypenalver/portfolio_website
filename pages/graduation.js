@@ -39,8 +39,6 @@ export default function Graduation({images}) {
             return updated;
           })
         }
-        placeholder="blur"
-        blurDataURL={src}
       />
       </div>
       ))}

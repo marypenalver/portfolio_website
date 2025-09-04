@@ -39,8 +39,6 @@ export default function Street({images}) {
             return updated;
           })
         }
-        placeholder="blur"
-        blurDataURL={src}
       />
       </div>
       ))}
