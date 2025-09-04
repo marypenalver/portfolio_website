@@ -35,7 +35,7 @@ export default function Contact() {
       {/* Left side: Contact info & form */}
       <div className="relative flex-1 bg-[#F5F5F5] text-black flex flex-col justify-center items-center ">
         {/* Centered CONTACT title */}
-        <h1 className="flex justify-center items-center text-2xl font-now mb-3">CONTACT</h1>
+        {/* <h1 className="flex justify-center items-center font-dropline mb-3">contact</h1> */}
 
         {/* Form */}
         <form onSubmit={handleSubmit} className=" text-xs flex flex-col gap-2 w-[400px]">

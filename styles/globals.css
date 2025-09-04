@@ -98,3 +98,24 @@ nav *,
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'perfecto';
+  src: url('/fonts/perfecto.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montblanc';
+  src: url('/fonts/montblanc.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'seasons_bold';
+  src: url('/fonts/seasons_bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

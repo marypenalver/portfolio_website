@@ -19,6 +19,10 @@ module.exports = {
         stardos: ['stardos','sans-serif'],
         stardos_bold: ['stardos_bold','sans-serif'],
         stardos: ['stardos','sans-serif'],
+        seasons: ['seasons_bold','serif'],
+        perfecto: ['perfecto','serif'],
+        montblanc: ['montblanc', 'serif'],
+
       },
     },
   },

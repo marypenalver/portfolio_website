@@ -4,29 +4,26 @@ import "yet-another-react-lightbox/styles.css";
 import Lightbox from "yet-another-react-lightbox";
 import { useState } from "react";
 import Link from "next/link";
+import {listImagesFrom} from "../lib/listImages";
+
 const Image = _Image.default || _Image;
 
-export default function Home() {
-  const photos = [
-    "/portraits/isabeach-11.jpg",
-    "/portraits/isabeach-9.jpg",
-    "/portraits/isabeach-8.jpg",
-    "/portraits/isabeach-14.jpg",
-    "/portraits/isabeach-12.jpg",
-    "/portraits/isabeach-13.jpg",
-    "/portraits/isabeach-10.jpg",
-    "/portraits/isabeach-15.jpg",
-  ];
+export async function getStaticProps(){
+  const images = listImagesFrom('images/home');
+  return {props:{images}};
+}
+export default function Home({images}) {
 
-  const [loaded, setLoaded] = useState(Array(photos.length).fill(false));
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [loaded, setLoaded] = useState(Array(images.length).fill(false));
 
-  // layout constants (match Tailwind gap-6 = 24px)
-  const N = photos.length;
+  const N = images.length;
   const GAP = 24; // px
+  const base = "/images"; // consistent prefix
 
   return (
     <>
-      {/* Stop iOS from “zooming” your layout */}
       <Head>
         <meta
           name="viewport"
@@ -38,17 +35,18 @@ export default function Home() {
         style={{ backgroundColor: "#F5F5F5" }}
         className="relative min-h-screen px-6 py-10 text-gray-900 flex items-center justify-center overflow-hidden"
       >
-        {/* UI text */}
-        <div className="absolute top-60 w-full text-center">
-          <Link href="/portrait" className="inline-block">
-            <button className="font-dropline bg-transparent p-1 rounded hover:bg-[#F5F5F5] transition">
-              PORTFOLIO
-            </button>
-          </Link>
+        {/* Top text */}
+        <div className="absolute bottom-32 w-full text-center">
+        <Link 
+            href="/portrait"
+            className=" underline decoration-1 font-dropline bg-transparent rounded hover:bg-transparent transition inline-block"
+          >
+            PORTFOLIO 
+          </ Link> 
         </div>
 
         <div className="absolute left-5 sm:left-20 top-20 text-left">
-          <p className="font-dropline p-1">MARIA PENALVER</p>
+        <p className="font-dropline p-1">MARIA PENALVER  </p> 
         </div>
 
         <div className="absolute right-5 sm:right-20 bottom-5 text-right">
@@ -59,32 +57,32 @@ export default function Home() {
           <p className="font-dropline p-1">(PORTRAITURE) & (FINE ARTS)</p>
         </div>
 
-        {/* Film-strip row: fits ALL images on one line, always */}
+        {/* Film-strip row */}
         <div
           className="flex items-center justify-center gap-6"
-          style={{
-            // Row width clamps to viewport on mobile, capped on desktop
-            width: "min(92vw, 1200px)",
-          }}
+          style={{ width: "min(92vw, 1200px)" }}
         >
-          {photos.map((photo, i) => (
+          {images.map((src, i) => (
             <div
-              key={i}
+              key={src}
               className="flex-shrink-0"
               style={{
-                // Each item = (rowWidth - totalGaps) / N
                 flex: `0 0 calc((100% - ${(N - 1) * GAP}px) / ${N})`,
               }}
             >
               <Image
-                src={`/images${photo}`}
+                src={src}
                 alt={`gallery-photo-${i}`}
                 width={800}
                 height={1200}
-                sizes={`${Math.ceil(92 / N)}vw`} // helps Next pick the right src
+                sizes={`${Math.ceil(92 / N)}vw`}
                 className={`w-full h-auto object-contain cursor-pointer opacity-0 transition-opacity duration-300 ease-in-out ${
                   loaded[i] ? "opacity-100" : ""
                 }`}
+                onClick={() => {
+                  setIndex(i);
+                  setIsOpen(true);
+                }}
                 onLoad={() =>
                   setLoaded((prev) => {
                     const updated = [...prev];
@@ -92,12 +90,17 @@ export default function Home() {
                     return updated;
                   })
                 }
-                placeholder="blur"
-                blurDataURL={`/images${photo}`}
               />
             </div>
           ))}
         </div>
+
+        <Lightbox
+          open={isOpen}
+          index={index}
+          close={() => setIsOpen(false)}
+          slides={images.map(p => ({ src: p}))}
+        />
       </main>
     </>
   );
