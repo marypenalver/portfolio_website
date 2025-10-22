@@ -35,7 +35,7 @@ export default function Contact() {
       {/* Left side: Contact info & form */}
       <div className="relative flex-1 bg-[#F5F5F5] text-black flex flex-col justify-center items-center ">
         {/* Centered CONTACT title */}
-        {/* <h1 className="flex justify-center items-center font-dropline mb-3">contact</h1> */}
+        <p className=" text-xs mb-7 font-dropline bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"> get in touch </p> 
 
         {/* Form */}
         <form onSubmit={handleSubmit} className=" text-xs flex flex-col gap-2 w-[400px]">
@@ -65,14 +65,14 @@ export default function Contact() {
         </form>
 
         {/* Additional Info */}
-        <p className="absolute left-10 top-10 font-dropline text-xs mt-10">INSTAGRAM: MARIAPENALVERR</p>
-        <p className="absolute right-10 bottom-5 font-dropline text-xs mt-2">EMAIL: MARYPENALVEROP@GMAIL.COM</p>
+        <p className="absolute left-10 top-20 font-dropline text-xs mt-10">INSTAGRAM: MARIAPENALVERR</p>
+        <p className="absolute right-10 bottom-7 font-dropline text-xs mt-2">EMAIL: CONTACT.MARIAPENALVER@GMAIL.COM</p>
       </div>
 
       {/* Right side: Background image */}
       <div className="relative flex-1 min-h-screen overflow-hidden">
         <Image
-          src="/images/portraits/isa/isa23.jpg"
+          src="/images/contact/39.jpg"
           fill
           alt="Background"
           className="object-cover object-[25%_50%]"

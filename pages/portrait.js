@@ -18,7 +18,7 @@ export default function Portrait({images}) {
   return (
     <main className=" pt-32 min-h-screen px-6 py-10 bg-#BC0032 text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
-        <section className="columns-3 md:columns-4 gap-40">
+        <section className="columns-3 md:columns-4 gap-20">
         {images.map((src, i) => (
           <div key={src} >
       <Image
