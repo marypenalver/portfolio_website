@@ -4,12 +4,11 @@ import "yet-another-react-lightbox/styles.css";
 import Lightbox from "yet-another-react-lightbox";
 import { useState } from "react";
 import Link from "next/link";
-import {listImagesFrom} from "../lib/listImages";
 
 const Image = _Image.default || _Image;
+import images from "../data/home.json";
 
 export async function getStaticProps(){
-  const images = listImagesFrom('images/home');
   return {props:{images}};
 }
 export default function Home({images}) {

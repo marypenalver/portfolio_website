@@ -2,11 +2,10 @@ import _Image from 'next/image';
 import 'yet-another-react-lightbox/styles.css';
 import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
-import {listImagesFrom} from "../lib/listImages";
 const Image = _Image.default || _Image;
+import images from "../data/street.json";
 
 export async function getStaticProps(){
-  const images = listImagesFrom('images/street');
   return {props:{images}};
 }
 export default function Street({images}) {
