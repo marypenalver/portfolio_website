@@ -31,14 +31,20 @@ export default function Contact() {
     }
 
   return (
-    <main className="relative flex min-h-screen font-body text-black">
+    <main className="  flex min-h-screen font-body text-black justify-center items-center ">
+      <Image
+        src= "/images/contact/me.jpg"
+        width={800}
+        height = {1200}
+        className="w-80 h-auto ml-60"
+        />
       {/* Left side: Contact info & form */}
-      <div className="relative flex-1 bg-[#F5F5F5] text-black flex flex-col justify-center items-center ">
+        <span class="p-7 border border-[rgb(65,53,6)] bg-[rgb(65,53,6)] inline-block">
         {/* Centered CONTACT title */}
-        <p className=" text-xs mb-7 font-dropline bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"> get in touch </p> 
+        <p className=" text-xl mb-7 font-heading bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"> get in touch </p> 
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className=" text-xs flex flex-col gap-2 w-[400px]">
+        <form onSubmit={handleSubmit} className=" text-xs flex flex-col gap-2 w-[400px] ">
           <input
             type="text"
             placeholder="[ YOUR NAME ]"
@@ -63,21 +69,18 @@ export default function Contact() {
             SEND
           </button>
         </form>
-
+        </span>
         {/* Additional Info */}
-        <p className="absolute left-10 top-20 font-dropline text-xs mt-10">INSTAGRAM: MARIAPENALVERR</p>
-        <p className="absolute right-10 bottom-7 font-dropline text-xs mt-2">EMAIL: CONTACT.MARIAPENALVER@GMAIL.COM</p>
-      </div>
+        <div class="w-[400px] left-10 top-20">
+    <p className="absolute left-10 top-10 font-dropline text-white text-xs mt-10">
+        <span class="p-4 border border-[rgb(65,53,6)] bg-[rgb(65,53,6)] inline-block">
+            INSTAGRAM: MARIAPENALVERR
+        </span>
+    </p>
+        <p className="absolute left-20 bottom-10 font-dropline text-xs mt-2">EMAIL: CONTACT.MARIAPENALVER@GMAIL.COM</p>
+        <p className="absolute right-20 bottom-10 font-dropline text-xs mt-2">WEBSITE DEVELOPED BY ME USING NEXT.JS & TAILWIND</p>
+        </div>
 
-      {/* Right side: Background image */}
-      <div className="relative flex-1 min-h-screen overflow-hidden">
-        <Image
-          src="/images/contact/39.jpg"
-          fill
-          alt="Background"
-          className="object-cover object-[25%_50%]"
-        />
-      </div>
     </main>
   );
 }

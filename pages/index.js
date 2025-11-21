@@ -99,6 +99,12 @@ export default function Home({images}) {
           index={index}
           close={() => setIsOpen(false)}
           slides={images.map(p => ({ src: p}))}
+          styles={{
+            container: {
+              backgroundColor: 'white', // Set the background to white
+              // You can also use an RGBA value for opacity, e.g., 'rgba(255, 255, 255, 0.95)'
+            }
+          }}
         />
       </main>
     </>

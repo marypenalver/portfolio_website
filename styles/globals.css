@@ -15,7 +15,7 @@
 
 /* Reset html, body, and root wrapper to be fully transparent and tall */
 html, body, #__next {
-  background-color: #F5F5F5 !important;
+  background-color: #FAF5ED !important;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -119,3 +119,4 @@ nav *,
   font-weight: normal;
   font-style: normal;
 }
+

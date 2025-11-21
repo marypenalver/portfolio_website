@@ -1,7 +1,10 @@
 import fs from "fs";
 import path from "path";
 
-const folders = ["graduation", "portraits", "street", "home"]; // image folders
+const folders = ["graduation", "portraits", "street", "home",
+//production portfolio
+"production/adweek", "production/nicholashoult"
+]; // image folders
 const basePath = path.join(process.cwd(), "public/images");
 
 folders.forEach(folder => {

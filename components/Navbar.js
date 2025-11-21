@@ -6,11 +6,13 @@ export default function Navbar() {
       <Link href="/" className="font-now lg:text-2xl sm:text-sm text-black mb-2 md:mb-0">MARIA PENALVER</Link>
       <div className="flex flex-wrap justify-center gap-4 text-sm font-body">
         {/* <Link href="/" className="text-black no-underline">HOME</Link> */}
+        {/* <Link href="/production" className="text-black no-underline">PRODUCTION</Link> */}
         <Link href="/portrait" className="text-black no-underline">PORTRAITS</Link>
         <Link href="/street" className="text-black no-underline">STREET</Link>
         <Link href="/graduation" className="text-black no-underline">GRADUATION</Link>
         {/* <Link href="/about" className="text-black no-underline">ABOUT</Link> */}
-        <Link href="/contact" className="text-black no-underline">CONTACT</Link>
+        {/* <Link href="/contact" className="text-black no-underline">CONTACT</Link> */}
+       
       </div>
     </nav>
   );

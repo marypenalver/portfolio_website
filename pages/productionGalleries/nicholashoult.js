@@ -2,14 +2,13 @@ import _Image from 'next/image';
 import 'yet-another-react-lightbox/styles.css';
 import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
-
 const Image = _Image.default || _Image;
-import images from "../data/graduation.json";
-export async function getStaticProps(){
+import images from "../../data/production/nicholashoult.json";
 
+export async function getStaticProps(){
   return {props:{images}};
 }
-export default function Graduation({images}) {
+export default function nicholashoult({images}) {
   
   const [isOpen,setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -21,13 +20,13 @@ export default function Graduation({images}) {
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
         <section className="columns-2 md:columns-4 gap-10">
         {images.map((src, i) => (
-          <div key={src} className= "group overflow-hidden" >
+          <div key={src} >
       <Image
         src={src}
         alt={`gallery-photo-${i}`}
         width={800}
         height={1200}
-        className={`mb-20 w-full cursor-pointer h-auto opacity-0 transition duration-500 ease-in-out group-hover:scale-[1.03] ${loaded[i] ? 'opacity-100' : ''}`}
+        className={`mb-20 w-full cursor-pointer h-auto opacity-0 transition-opacity duration-300 ease-in-out ${loaded[i] ? 'opacity-100' : ''}`}
         onClick={() => {
           setIndex(i);
           setIsOpen(true);
