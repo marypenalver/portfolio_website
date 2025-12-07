@@ -31,8 +31,7 @@ export default function Home({images}) {
       </Head>
 
       <main
-        style={{ backgroundColor: "#F5F5F5" }}
-        className="relative min-h-screen px-6 py-10 text-gray-900 flex items-center justify-center overflow-hidden"
+        className=" bg-#FAF5ED relative min-h-screen px-6 py-10 text-gray-900 flex items-center justify-center overflow-hidden"
       >
         {/* Top text */}
         <div className="absolute bottom-32 w-full text-center">
@@ -44,8 +43,8 @@ export default function Home({images}) {
           </ Link> 
         </div>
 
-        <div className="absolute left-5 sm:left-20 top-20 text-left">
-        <p className="font-dropline p-1">MARIA PENALVER  </p> 
+        <div className="absolute text-black mb-2 md:mb-0 px-6 py-6 z-50 absolute top-0 left-0">
+        <p className="font-now lg:text-2xl sm:text-sm ">MARIA PENALVER  </p> 
         </div>
 
         <div className="absolute right-5 sm:right-20 bottom-5 text-right">
@@ -101,8 +100,7 @@ export default function Home({images}) {
           slides={images.map(p => ({ src: p}))}
           styles={{
             container: {
-              backgroundColor: 'white', // Set the background to white
-              // You can also use an RGBA value for opacity, e.g., 'rgba(255, 255, 255, 0.95)'
+              backgroundColor:'#FAF5ED'
             }
           }}
         />
