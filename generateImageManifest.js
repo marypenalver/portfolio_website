@@ -3,7 +3,18 @@ import path from "path";
 
 const folders = ["graduation", "portraits", "street", "home",
 //production portfolio
-"production/adweek", "production/nicholashoult"
+"production/chesscast", 
+"production/adweek",
+"production/nicholashoult",
+"production/NYMLorde", 
+"production/NYMLindsayLohan",
+"production/NYMParkerPosey", 
+"production/NYMAdamScott",
+"production/NYMClaireDanes",
+"production/NYMLolaTung", 
+"production/NYMOwenCooper",
+"production/NYMRachelZegler", 
+"production/NYMWunmiMosaku"
 ]; // image folders
 const basePath = path.join(process.cwd(), "public/images");
 

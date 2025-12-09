@@ -16,7 +16,7 @@ export default function nicholashoult({images}) {
 
   
   return (
-    <main className=" pt-32 min-h-screen px-6 py-10 bg-#BC0032 text-gray-900">
+    <main className=" pt-32 min-h-screen px-6 py-10 text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
         <section className="columns-2 md:columns-4 gap-10">
         {images.map((src, i) => (
@@ -50,8 +50,7 @@ export default function nicholashoult({images}) {
         slides={images.map(p => ({ src: p }))}
         styles={{
           container: {
-            backgroundColor: 'white', // Set the background to white
-            // You can also use an RGBA value for opacity, e.g., 'rgba(255, 255, 255, 0.95)'
+            backgroundColor:'#FAF5ED' 
           }
         }}
       />

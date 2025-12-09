@@ -10,58 +10,149 @@ export default function Production() {
     // Reverted image sizes to what they are on disk, Next.js handles optimization
     const images = [
         {
-            src: "/images/production/adweek.jpg",
+            src: "/images/production/NYMLorde/lorde.jpg",
+            alt: "Lorde x New York Magazine",
+            href: "/productionGalleries/NYMLorde",
+            caption: "Lorde x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", // Largest item
+            maxWidth: "max-w-md", // Set a max width for this specific image
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMLindsayLohan/lindsay.jpg",
+            alt: "Lindsay Lohan x New York Magazine",
+            href: "/productionGalleries/NYMLindsayLohan",
+            caption: "Lindsay Lohan x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMParkerPosey/parker.jpg",
+            alt: "Parker Posey x New York Magazine",
+            href: "/productionGalleries/NYMParkerPosey",
+            caption: "Parker Posey x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMAdam/adam.jpg",
+            alt: "Adam Scott x New York Magazine",
+            href: "/productionGalleries/NYMAdamScott",
+            caption: "Adam Scott x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMLola/lola.jpg",
+            alt: "Lola Tung x New York Magazine",
+            href: "/productionGalleries/NYMLolaTung",
+            caption: "Lola Tung x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMOwenCooper/owen.jpg",
+            alt: "Owen Cooper x New York Magazine",
+            href: "/productionGalleries/NYMOwenCooper",
+            caption: "Owen Cooper x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMWunmi/wunmi.jpg",
+            alt: "Wunmi Mosaku x New York Magazine",
+            href: "/productionGalleries/NYMWunmiMosaku",
+            caption: "Wunmi Mosaku x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/NYMClaire/claire.jpg",
+            alt: "Claire Danes x New York Magazine",
+            href: "/productionGalleries/NYMClaireDanes",
+            caption: "Claire Danes x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        
+        {
+            src: "/images/production/NYMRachel/rachel.jpg",
+            alt: "Rachel Zegler x New York Magazine",
+            href: "/productionGalleries/NYMRachelZegler",
+            caption: "Rachel Zegler x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md",
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/adweek/adweek.jpg",
             alt: "Jimmy Fallon x Adweek",
             href: "/productionGalleries/adweek",
             caption: "Jimmy Fallon x Adweek",
-            // Increased column count for a tighter horizontal layout
-            gridClasses: "col-span-1 sm:col-span-2",
-            offsetClasses:"mt-[16%] -ml-6",
-            maxWidth: "max-w-xs", // Set a max width for this specific image
-            imageWidth: 800, 
-            imageHeight: 1200
+            gridClasses: "col-span-2 sm:col-span-3",
+            maxWidth: "max-w-md", 
+            imageWidth: 1000, 
+            imageHeight: 1500
         },
         {
-            src: "/images/production/nicholashoult.jpg",
+            src: "/images/production/nicholashoult/nicholashoult.jpg",
             alt: "Nicholas Hoult x Jaeger Le Coultre",
             href: "/productionGalleries/nicholashoult",
             caption: "Nicholas Hoult x Jaeger Le Coultre",
-            gridClasses: "col-span-4",
-            offsetClasses:"mt-0 ml-[30%]",
-            maxWidth: "max-w-xs", // Define a very small max width
+            gridClasses: "col-span-2 sm:col-span-3",
+            maxWidth: "max-w-md",
             imageWidth: 600,
             imageHeight: 900
         },
         {
-            src: "/images/production/chesscast.jpg",
+            src: "/images/production/chesscast/chesscast.jpg",
             alt: "Chess Cast x Vanity Fair",
-            href: "/production/chesscast",
+            href: "/productionGalleries/chesscast",
             caption: '"Chess" Cast x Vanity Fair', 
             gridClasses: "col-span-3",
-            offsetClasses:"mt-[30%]",
-            maxWidth: "max-w-[300px]", // Medium small square
+            maxWidth: "max-w-md", 
             imageWidth: 500,
             imageHeight: 500
         },
         {
-            src: "/images/production/michaeljfox.jpg",
+            src: "/images/production/michellewilliams/michellewilliams.jpg",
+            alt: "Michelle Williams x 'Anna Christie'",
+            href: "/productionGalleries/michellewilliams",
+            caption: "Michelle Williams x 'Anna Christie'",
+            gridClasses: "col-span-3",
+            maxWidth: "max-w-md", 
+            imageWidth: 500,
+            imageHeight: 500
+        },
+        {
+            src: "/images/production/michaeljfox/michaeljfox.jpg",
             alt: "Michael J Fox x People Magazine",
-            href: "/production/michaeljfox",
+            href: "/productionGalleries/michaeljfox",
             caption: "Michael J. Fox x People Magazine",
-            gridClasses: "col-span-2 sm:col-span-3", // Largest item
-            maxWidth: "max-w-md", // Set a max width for this specific image
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
             imageWidth: 1000,
             imageHeight: 1500
         },
     ];
 
     const [loaded, setLoaded] = useState(Array(images.length).fill(false));
-    const handleLoad = (index) => {
-        const updated = [...loaded];
-        updated[index] = true;
-        setLoaded(updated);
-      };
-
     return (
         // Added max-w-7xl to constrain the content and center it
         <main className="pt-32 min-h-screen px-6 py-10 text-gray-900 mx-auto max-w-7xl">
@@ -71,24 +162,26 @@ export default function Production() {
                     // Center the content within the grid cell
                     <div
                         key={i}
-                        className={`${image.gridClasses} ${image.offsetClasses} flex flex-col items-start justify-start cursor-pointer`}
+                        className={`${image.gridClasses} ${image.offsetClasses} flex flex-col items-start justify-start `}
                     >
                         <Link 
                             href={image.href} 
-                            // ❗ Key Change 1: Set a max-width on the link/wrapper
-                            // This ensures the image respects this maximum size
                             className={`block w-full ${image.maxWidth} overflow-hidden group`}
                         >
-                            <div className="w-full">
+                            <div className="w-full relative">
                                 <Image
                                     src={image.src}
                                     alt={image.alt}
                                     width={image.imageWidth}
                                     height={image.imageHeight}
-                                    // ❗ Key Change 2: Removed h-full and object-cover to prevent cropping
-                                    className={`w-full transition-transform duration-500 ease-in-out group-hover:scale-[1.03] 
-                                        opacity-0 ${loaded[i] ? 'opacity-100' : ''}`}
-                                    onLoad={() => handleLoad(i)}
+                                    className={`w-full opacity-0 transition duration-500 ease-in-out group-hover:scale-[1.03] ${loaded[i] ? 'opacity-100' : ''}`}
+                                    onLoad={() =>
+                                        setLoaded(prev => {
+                                          const updated = [...prev];
+                                          updated[i] = true;
+                                          return updated;
+                                        })
+                                      }
                                     // Sizing based on the max-width we set and the number of columns
                                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                                 />

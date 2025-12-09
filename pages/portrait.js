@@ -50,8 +50,7 @@ export default function Portrait({images}) {
         slides={images.map(p => ({ src: p }))}
         styles={{
           container: {
-            backgroundColor:'#FAF5ED' // Set the background to white
-            // You can also use an RGBA value for opacity, e.g., 'rgba(255, 255, 255, 0.95)'
+            backgroundColor:'#FAF5ED' 
           }
         }}
       />
