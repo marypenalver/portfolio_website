@@ -9,7 +9,7 @@ const Image = _Image.default || _Image;
 export default function Production() {
     const images = [
         {
-            src: "/images/production/NYMLorde/lorde.jpg",
+            src: "/images/production/NYMLorde/lorde.JPG",
             alt: "Lorde x New York Magazine",
             href: "/productionGalleries/NYMLorde",
             caption: "Lorde x New York Magazine",
@@ -19,7 +19,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMLindsayLohan/lindsay.jpg",
+            src: "/images/production/NYMLindsayLohan/lindsay.JPG",
             alt: "Lindsay Lohan x New York Magazine",
             href: "/productionGalleries/NYMLindsayLohan",
             caption: "Lindsay Lohan x New York Magazine",
@@ -29,7 +29,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMParkerPosey/parker.jpg",
+            src: "/images/production/NYMParkerPosey/parker.JPG",
             alt: "Parker Posey x New York Magazine",
             href: "/productionGalleries/NYMParkerPosey",
             caption: "Parker Posey x New York Magazine",
@@ -39,7 +39,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMAdamScott/adam.jpg",
+            src: "/images/production/NYMAdamScott/adam.JPG",
             alt: "Adam Scott x New York Magazine",
             href: "/productionGalleries/NYMAdamScott",
             caption: "Adam Scott x New York Magazine",
@@ -49,7 +49,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMLolaTung/lola.jpg",
+            src: "/images/production/NYMLolaTung/lola.JPG",
             alt: "Lola Tung x New York Magazine",
             href: "/productionGalleries/NYMLolaTung",
             caption: "Lola Tung x New York Magazine",
@@ -59,7 +59,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMOwenCooper/owen.jpg",
+            src: "/images/production/NYMOwenCooper/owen.JPG",
             alt: "Owen Cooper x New York Magazine",
             href: "/productionGalleries/NYMOwenCooper",
             caption: "Owen Cooper x New York Magazine",
@@ -69,7 +69,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMWunmiMusaku/wunmi.jpg",
+            src: "/images/production/NYMWunmiMusaku/wunmi.JPG",
             alt: "Wunmi Mosaku x New York Magazine",
             href: "/productionGalleries/NYMWunmiMosaku",
             caption: "Wunmi Mosaku x New York Magazine",
@@ -79,7 +79,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMClaireDanes/claire.jpg",
+            src: "/images/production/NYMClaireDanes/claire.JPG",
             alt: "Claire Danes x New York Magazine",
             href: "/productionGalleries/NYMClaireDanes",
             caption: "Claire Danes x New York Magazine",
@@ -90,7 +90,7 @@ export default function Production() {
         },
         
         {
-            src: "/images/production/NYMRachelZegler/rachel.jpg",
+            src: "/images/production/NYMRachelZegler/rachel.JPG",
             alt: "Rachel Zegler x New York Magazine",
             href: "/productionGalleries/NYMRachelZegler",
             caption: "Rachel Zegler x New York Magazine",
@@ -100,7 +100,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/adweek/adweek.jpg",
+            src: "/images/production/adweek/adweek.JPG",
             alt: "Jimmy Fallon x Adweek",
             href: "/productionGalleries/adweek",
             caption: "Jimmy Fallon x Adweek",
@@ -110,7 +110,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/nicholashoult/nicholashoult.jpg",
+            src: "/images/production/nicholashoult/nicholashoult.JPG",
             alt: "Nicholas Hoult x Jaeger Le Coultre",
             href: "/productionGalleries/nicholashoult",
             caption: "Nicholas Hoult x Jaeger Le Coultre",
@@ -130,7 +130,7 @@ export default function Production() {
             imageHeight: 500
         },
         {
-            src: "/images/production/michellewilliams/michellewilliams.jpg",
+            src: "/images/production/michellewilliams/michellewilliams.JPG",
             alt: "Michelle Williams x 'Anna Christie'",
             href: "/productionGalleries/michellewilliams",
             caption: "Michelle Williams x 'Anna Christie'",
@@ -140,7 +140,7 @@ export default function Production() {
             imageHeight: 500
         },
         {
-            src: "/images/production/michaeljfox/michaeljfox.jpg",
+            src: "/images/production/michaeljfox/michaeljfox.JPG",
             alt: "Michael J Fox x People Magazine",
             href: "/productionGalleries/michaeljfox",
             caption: "Michael J. Fox x People Magazine",
