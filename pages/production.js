@@ -69,7 +69,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMWunmiMusaku/wunmi.JPG",
+            src: "/images/production/NYMWunmiMosaku/wunmi.JPG",
             alt: "Wunmi Mosaku x New York Magazine",
             href: "/productionGalleries/NYMWunmiMosaku",
             caption: "Wunmi Mosaku x New York Magazine",
@@ -100,7 +100,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/adweek/adweek.JPG",
+            src: "/images/production/adweek/adweek.jpg",
             alt: "Jimmy Fallon x Adweek",
             href: "/productionGalleries/adweek",
             caption: "Jimmy Fallon x Adweek",
@@ -130,7 +130,7 @@ export default function Production() {
             imageHeight: 500
         },
         {
-            src: "/images/production/michellewilliams/michellewilliams.JPG",
+            src: "/images/production/michellewilliams/michellewilliams.jpg",
             alt: "Michelle Williams x 'Anna Christie'",
             href: "/productionGalleries/michellewilliams",
             caption: "Michelle Williams x 'Anna Christie'",
@@ -140,7 +140,7 @@ export default function Production() {
             imageHeight: 500
         },
         {
-            src: "/images/production/michaeljfox/michaeljfox.JPG",
+            src: "/images/production/michaeljfox/michaeljfox.jpg",
             alt: "Michael J Fox x People Magazine",
             href: "/productionGalleries/michaeljfox",
             caption: "Michael J. Fox x People Magazine",
