@@ -7,15 +7,14 @@ import { useState } from 'react';
 const Image = _Image.default || _Image;
 
 export default function Production() {
-    // Reverted image sizes to what they are on disk, Next.js handles optimization
     const images = [
         {
             src: "/images/production/NYMLorde/lorde.jpg",
             alt: "Lorde x New York Magazine",
             href: "/productionGalleries/NYMLorde",
             caption: "Lorde x New York Magazine",
-            gridClasses: "col-span-2 sm:col-span-3", // Largest item
-            maxWidth: "max-w-md", // Set a max width for this specific image
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
             imageWidth: 1000,
             imageHeight: 1500
         },
@@ -40,7 +39,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMAdam/adam.jpg",
+            src: "/images/production/NYMAdamScott/adam.jpg",
             alt: "Adam Scott x New York Magazine",
             href: "/productionGalleries/NYMAdamScott",
             caption: "Adam Scott x New York Magazine",
@@ -50,7 +49,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMLola/lola.jpg",
+            src: "/images/production/NYMLolaTung/lola.jpg",
             alt: "Lola Tung x New York Magazine",
             href: "/productionGalleries/NYMLolaTung",
             caption: "Lola Tung x New York Magazine",
@@ -70,7 +69,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMWunmi/wunmi.jpg",
+            src: "/images/production/NYMWunmiMusaku/wunmi.jpg",
             alt: "Wunmi Mosaku x New York Magazine",
             href: "/productionGalleries/NYMWunmiMosaku",
             caption: "Wunmi Mosaku x New York Magazine",
@@ -80,7 +79,7 @@ export default function Production() {
             imageHeight: 1500
         },
         {
-            src: "/images/production/NYMClaire/claire.jpg",
+            src: "/images/production/NYMClaireDanes/claire.jpg",
             alt: "Claire Danes x New York Magazine",
             href: "/productionGalleries/NYMClaireDanes",
             caption: "Claire Danes x New York Magazine",
@@ -91,7 +90,7 @@ export default function Production() {
         },
         
         {
-            src: "/images/production/NYMRachel/rachel.jpg",
+            src: "/images/production/NYMRachelZegler/rachel.jpg",
             alt: "Rachel Zegler x New York Magazine",
             href: "/productionGalleries/NYMRachelZegler",
             caption: "Rachel Zegler x New York Magazine",
