@@ -47,7 +47,6 @@ export default function ChessCast({images}) {
      
       </section>
       <p className="text-center text-xs font-mono tracking-widest uppercase whitespace-pre-wrap">
-        <u>Location:</u> Fouquet's New York <br></br>
         <u>Photographer:</u> Mark Seliger<br></br>
         <u>Executive Producer:</u> Ruth Levy <br></br>
         <u>Producer:</u> Madi Overstreet<br></br> <br></br>

@@ -50,20 +50,16 @@ export default function WunmiMosaku({images}) {
      
       </section>
       <p className="text-center text-xs font-mono tracking-widest uppercase whitespace-pre-wrap">
-<u>Location:</u> Smashbox Studios, Los Angeles <br></br>
 <u>Photographer:</u> Mark Seliger<br></br>
 <u>Executive Producer:</u> Ruth Levy <br></br>
-<u>Producers:</u> Madi Overstreet, Madison Shelpuk<br></br> <br></br>
-<u>Production Assistant (not on set): </u> Maria Penalver<br></br> <br></br>
-<u>Digi Tech:</u> Milan<br></br>
-<u>Photo Assistants:</u> Will Foerster, Embry Lopez<br></br>
+<u>Producer:</u> Madi Overstreet<br></br> <br></br>
+<u>Production Assistant: </u> Maria Penalver<br></br> <br></br>
+<u>Digi Tech:</u> Will Foerster<br></br>
+<u>Photo Assistants:</u> Reggie Desilus, Jonas Søndergaard<br></br>
 <u>Magazine:</u> New York Magazine <br></br>
-<u>Subject:</u> Adam Scott<br></br>
+<u>Subject:</u> Wunmi Mosaku<br></br>
 <u>Wardrobe Stylist:</u> Daniel Edley <br></br>
-<u>Wardrobe Assistant:</u> Rachel Liner <br></br>
-<u>Hair:</u> Hair by Kim Verbeck using Balmain Hair<br></br>
-<u>Make-up:</u> Makeup by Elle Favorule<br></br>
-<u>Prop Stylist:</u> Lux Wright<br></br>
+<u>Wardrobe Assistant:</u> Grace Providencia Wagner <br></br>
 <u>Post-Production:</u> Rachel Crowe
 </p>
 
