@@ -4,12 +4,12 @@ import 'yet-another-react-lightbox/styles.css';
 import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
 const Image = _Image.default || _Image;
-import images from "../../data/production/NYMOwenCooper.json";
+import images from "../../data/production/michellewilliams.json";
 
 export async function getStaticProps(){
   return {props:{images}};
 }
-export default function OwenCooper({images}) {
+export default function michellewilliams({images}) {
   
   const [isOpen,setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -32,7 +32,7 @@ export default function OwenCooper({images}) {
         alt={`gallery-photo-${i}`}
         width={800}
         height={1200}
-        className={`w-170 mb-20 w-full cursor-pointer h-auto opacity-0 transition-opacity duration-300 ease-in-out ${loaded[i] ? 'opacity-100' : ''}`}
+        className={`mb-20 cursor-pointer h-auto opacity-0 transition-opacity duration-300 ease-in-out ${loaded[i] ? 'opacity-100' : ''}`}
         onClick={() => {
           setIndex(i);
           setIsOpen(true);
@@ -50,18 +50,18 @@ export default function OwenCooper({images}) {
      
       </section>
       <p className="text-center text-xs font-mono tracking-widest uppercase whitespace-pre-wrap">
-        <u>Photographer:</u> Mark Seliger<br></br>
-        <u>Executive Producer:</u> Ruth Levy <br></br>
-        <u>Producer:</u> Madi Overstreet<br></br> <br></br>
-        <u>Production Assistant:</u> Maria Penalver<br></br> <br></br>
-        <u>Digi Tech:</u> Will Foerster<br></br>
-        <u>Photo Assistants:</u> Reggie Desilus, Jonas Søndergaard<br></br>
-        <u>Magazine:</u> New York Magazine <br></br>
-        <u>Subject:</u> Owen Cooper<br></br>
-        <u>Wardrobe Stylist:</u> Daniel Edley <br></br>
-        <u>Wardrobe Assistants:</u> Grace Providencia Wagner, Lexi Lang <br></br>
-        <u>Groomer:</u> Grooming by Rheanne White using Bumble And Bumble // TraceyMattingly.com<br></br>
-        <u>Post-Production:</u> Rachel Crowe
+<u>Photographer:</u> Mark Seliger<br></br>
+<u>Executive Producer:</u> Ruth Levy <br></br>
+<u>Producer:</u> Madi Overstreet<br></br> <br></br>
+<u>Production Assistant:</u> Maria Penalver<br></br> <br></br>
+<u>Digi Tech:</u> Will Foerster<br></br>
+<u>Photo Assistants:</u> Reggie Desilus, Jonas Søndergaard<br></br>
+<u>Client:</u> St. Anne's Warehouse <br></br>
+<u>Subject:</u> Michelle Williams<br></br>
+<u>Costume Designer:</u> Paul Tazewell<br></br>
+<u>Hair:</u> Lacy Redway<br></br>
+<u>Make-up:</u> Romy Soleimani<br></br>
+<u>Post-Production:</u> Rachel Crowe
 </p>
 
 

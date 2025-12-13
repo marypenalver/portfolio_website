@@ -18,7 +18,7 @@ export default function Portrait({images}) {
   return (
     <main className=" pt-32 min-h-screen px-6 py-10 text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-10">
+      <section className="columns-2 md:columns-4 gap-10">
         {images.map((src, i) => (
           <div key={src} className = "group overflow-hidden" >
       <Image

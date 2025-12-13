@@ -21,9 +21,12 @@ export default function WunmiMosaku({images}) {
       <Link href="/production" className = "font-dropline block px-10 pb-8">
         BACK
       </Link>
-      <section className="flex justify-center">
+      <section className=" grid grid-cols-1 justify-items-center">
         {images.map((src, i) => (
-          <div key={src} >
+          <div 
+            key={src} 
+            className="w-[40%] mx-auto"
+          >
       <Image
         src={src}
         alt={`gallery-photo-${i}`}
@@ -51,7 +54,7 @@ export default function WunmiMosaku({images}) {
 <u>Photographer:</u> Mark Seliger<br></br>
 <u>Executive Producer:</u> Ruth Levy <br></br>
 <u>Producers:</u> Madi Overstreet, Madison Shelpuk<br></br> <br></br>
-<u>Production Assistant: (not on set) </u> Maria Penalver<br></br> <br></br>
+<u>Production Assistant (not on set): </u> Maria Penalver<br></br> <br></br>
 <u>Digi Tech:</u> Milan<br></br>
 <u>Photo Assistants:</u> Will Foerster, Embry Lopez<br></br>
 <u>Magazine:</u> New York Magazine <br></br>

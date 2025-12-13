@@ -4,12 +4,12 @@ import 'yet-another-react-lightbox/styles.css';
 import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
 const Image = _Image.default || _Image;
-import images from "../../data/production/NYMOwenCooper.json";
+import images from "../../data/production/bowenyang.json";
 
 export async function getStaticProps(){
   return {props:{images}};
 }
-export default function OwenCooper({images}) {
+export default function BowenYang({images}) {
   
   const [isOpen,setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -56,15 +56,10 @@ export default function OwenCooper({images}) {
         <u>Production Assistant:</u> Maria Penalver<br></br> <br></br>
         <u>Digi Tech:</u> Will Foerster<br></br>
         <u>Photo Assistants:</u> Reggie Desilus, Jonas Søndergaard<br></br>
-        <u>Magazine:</u> New York Magazine <br></br>
-        <u>Subject:</u> Owen Cooper<br></br>
-        <u>Wardrobe Stylist:</u> Daniel Edley <br></br>
-        <u>Wardrobe Assistants:</u> Grace Providencia Wagner, Lexi Lang <br></br>
-        <u>Groomer:</u> Grooming by Rheanne White using Bumble And Bumble // TraceyMattingly.com<br></br>
+        <u>Magazine:</u> Esquire <br></br>
+        <u>Subject:</u> Bowen Yang<br></br>
         <u>Post-Production:</u> Rachel Crowe
 </p>
-
-
       <Lightbox
         open={isOpen}
         index={index}

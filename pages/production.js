@@ -100,6 +100,16 @@ export default function Production() {
             imageHeight: 1500
         },
         {
+            src: "/images/production/bowenyang/bowenCover.avif",
+            alt: "Bowen Yang x Esquire",
+            href: "/productionGalleries/bowenyang",
+            caption: "Bowen Yang x Esquire",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
             src: "/images/production/adweek/adweek.jpg",
             alt: "Jimmy Fallon x Adweek",
             href: "/productionGalleries/adweek",
@@ -111,9 +121,9 @@ export default function Production() {
         },
         {
             src: "/images/production/nicholashoult/nicholashoult.JPG",
-            alt: "Nicholas Hoult x Jaeger Le Coultre",
+            alt: "Nicholas Hoult x Jaeger Le-Coultre",
             href: "/productionGalleries/nicholashoult",
-            caption: "Nicholas Hoult x Jaeger Le Coultre",
+            caption: "Nicholas Hoult x Jaeger-Le Coultre",
             gridClasses: "col-span-2 sm:col-span-3",
             maxWidth: "max-w-md",
             imageWidth: 600,
@@ -123,7 +133,7 @@ export default function Production() {
             src: "/images/production/chesscast/chesscast.jpg",
             alt: "Chess Cast x Vanity Fair",
             href: "/productionGalleries/chesscast",
-            caption: '"Chess" Cast x Vanity Fair', 
+            caption: "'Chess' Cast x Vanity Fair", 
             gridClasses: "col-span-3",
             maxWidth: "max-w-md", 
             imageWidth: 500,
@@ -167,13 +177,13 @@ export default function Production() {
                             href={image.href} 
                             className={`block w-full ${image.maxWidth} overflow-hidden group`}
                         >
-                            <div className="w-full relative">
+                            <div className="relative">
                                 <Image
                                     src={image.src}
                                     alt={image.alt}
                                     width={image.imageWidth}
                                     height={image.imageHeight}
-                                    className={`w-full opacity-0 transition duration-500 ease-in-out group-hover:scale-[1.03] ${loaded[i] ? 'opacity-100' : ''}`}
+                                    className={`opacity-0 transition duration-500 ease-in-out group-hover:scale-[1.03] ${loaded[i] ? 'opacity-100' : ''}`}
                                     onLoad={() =>
                                         setLoaded(prev => {
                                           const updated = [...prev];

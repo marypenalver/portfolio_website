@@ -21,9 +21,12 @@ export default function LolaTung({images}) {
       <Link href="/production" className = "font-dropline block px-10 pb-8">
         BACK
       </Link>
-      <section className="flex justify-center">
+      <section className=" grid grid-cols-1 justify-items-center">
         {images.map((src, i) => (
-          <div key={src} >
+          <div 
+          key={src} 
+          className="w-[40%] mx-auto"
+          >
       <Image
         src={src}
         alt={`gallery-photo-${i}`}

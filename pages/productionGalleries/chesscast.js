@@ -54,12 +54,10 @@ export default function ChessCast({images}) {
         <u>Production Assistant:</u> Maria Penalver<br></br> <br></br>
         <u>Digi Tech:</u> Will Foerster<br></br>
         <u>Photo Assistants:</u> Reggie Desilus, Jonas Søndergaard<br></br>
-        <u>Magazine:</u> New York Magazine <br></br>
-        <u>Subject:</u> Lola Tung<br></br>
+        <u>Magazine:</u> Vanity Fair <br></br>
+        <u>Subjects:</u> Nicholas Christopher, Lea Michele, Aaron Tveit <br></br>
         <u>Wardrobe Stylist:</u> Daniel Edley <br></br>
         <u>Wardrobe Assistant:</u> Grace Providencia Wagner <br></br>
-        <u>Hair:</u> Hair by Rebekah Forecast using Sisley<br></br>
-        <u>Make-up:</u> Misha Shahzada using Victoria Beckham Beauty, represented by A Frame Agency.<br></br>
         <u>Post-Production:</u> Rachel Crowe
 </p>
 

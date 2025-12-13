@@ -29,9 +29,9 @@ export default function Contact() {
     }
 
   return (
-    <main className="relative flex min-h-screen justify-center items-center ">
-       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <p className="  text-[16rem] font-now text-black tracking-widest text-center leading-none">
+    <main className=" bg- relative flex min-h-screen justify-center items-center ">
+       <div className="absolute inset-0 flex pointer-events-none">
+        <p className=" absolute top-[46%] left-[6%] text-[400%] font-now text-black tracking-widest text-center leading-none">
         CONTACT
         </p>
       </div>
@@ -47,9 +47,7 @@ export default function Contact() {
             setLoaded(true)} 
         />
       </div>
-
-        {/* Form
-        <form onSubmit={handleSubmit} className=" text-xs flex flex-col gap-2 w-[400px] ">
+        <form onSubmit={handleSubmit} className="absolute top-[45%] left-2/3  text-xs flex flex-col gap-2 w-[400px] ">
           <input
             type="text"
             placeholder="[ YOUR NAME ]"
@@ -62,7 +60,7 @@ export default function Contact() {
             placeholder="[ YOUR EMAIL ]"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="font-dropline bg-transparent  p-1 text-center text-black placeholder-black focus:outline-none"
+            className="font-dropline bg-transparent p-1 text-center text-black placeholder-black focus:outline-none"
           />
           <textarea
             placeholder="[ YOUR MESSAGE ]"
@@ -73,13 +71,12 @@ export default function Contact() {
           <button type="submit" className="font-dropline bg-transparent  p-1 text-center text-black rounded hover:bg-#F5F5F5 hover:text-black transition">
             SEND
           </button>
-        </form> */}
-        {/* Additional Info */}
+        </form> 
     <p className="absolute text-center bottom-10 font-dropline text-black text-xs mt-10">
             INSTAGRAM: MARIAPENALVERR
     </p>
         <p className="absolute left-20 bottom-10 font-dropline text-xs mt-2">EMAIL: CONTACT.MARIAPENALVER@GMAIL.COM</p>
-        <p className="absolute right-20 bottom-10 font-dropline text-xs mt-2">WEBSITE DEVELOPED BY ME USING NEXT.JS & TAILWIND</p>
+        <p className="absolute right-[10%] bottom-10 font-dropline text-xs mt-2">PRODUCTION. PHOTOGRAPHY. WEB DEVELOPMENT</p>
       
     </main>
   );

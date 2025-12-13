@@ -1,4 +1,5 @@
 import _Image from 'next/image';
+import Link from 'next/link';
 import 'yet-another-react-lightbox/styles.css';
 import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
@@ -18,6 +19,9 @@ export default function nicholashoult({images}) {
   return (
     <main className=" pt-32 min-h-screen px-6 py-10 text-gray-900">
       {/* <section className="grid grid-cols-2 md:grid-cols-3 gap-4 "> */}
+      <Link href="/production" className = "font-dropline block px-10 pb-8">
+        BACK
+      </Link>
         <section className="columns-2 md:columns-4 gap-10">
         {images.map((src, i) => (
           <div key={src} >

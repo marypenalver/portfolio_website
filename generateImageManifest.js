@@ -14,7 +14,10 @@ const folders = ["graduation", "portraits", "street", "home",
 "production/NYMLolaTung", 
 "production/NYMOwenCooper",
 "production/NYMRachelZegler", 
-"production/NYMWunmiMosaku"
+"production/NYMWunmiMosaku",
+"production/michaeljfox",
+"production/michellewilliams",
+"production/bowenyang"
 ]; // image folders
 const basePath = path.join(process.cwd(), "public/images");
 
@@ -29,7 +32,7 @@ folders.forEach(folder => {
 
   const files = fs
     .readdirSync(dir)
-    .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
+    .filter(f => /\.(jpg|avif|jpeg|png|webp)$/i.test(f))
     .sort()
     .map(f => `/images/${folder}/${f}`); // ✅ prepend full path
 

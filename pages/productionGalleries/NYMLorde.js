@@ -17,19 +17,22 @@ export default function Lorde({images}) {
 
   
   return (
-    <main className=" pt-32 min-h-screen px-6 py-10 text-gray-900">
+    <main className="pt-32 min-h-screen px-6 py-10 text-gray-900">
       <Link href="/production" className = "font-dropline block px-10 pb-8">
         BACK
       </Link>
-      <section className="flex justify-center">
+      <section className=" grid grid-cols-1 justify-items-center">
         {images.map((src, i) => (
-          <div key={src} >
+          <div 
+          key={src} 
+          className="w-[40%] mx-auto"
+          >
       <Image
         src={src}
         alt={`gallery-photo-${i}`}
         width={800}
         height={1200}
-        className={`w-170 mb-20 w-full cursor-pointer h-auto opacity-0 transition-opacity duration-300 ease-in-out ${loaded[i] ? 'opacity-100' : ''}`}
+        className={`mb-20 cursor-pointer h-auto opacity-0 transition-opacity duration-300 ease-in-out ${loaded[i] ? 'opacity-100' : ''}`}
         onClick={() => {
           setIndex(i);
           setIsOpen(true);
