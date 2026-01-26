@@ -17,7 +17,9 @@ const folders = ["graduation", "portraits", "street", "home",
 "production/NYMWunmiMosaku",
 "production/michaeljfox",
 "production/michellewilliams",
-"production/bowenyang"
+"production/bowenyang",
+"production/thebeauty",
+"production/zohranmamdani"
 ]; // image folders
 const basePath = path.join(process.cwd(), "public/images");
 

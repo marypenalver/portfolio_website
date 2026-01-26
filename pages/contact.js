@@ -80,7 +80,7 @@ export default function Contact() {
       {/* mobile only */}
       <div className="mt-6 flex flex-col gap-2 text-center text-xs font-dropline md:hidden">
         <p>INSTAGRAM: MARIAPENALVERR</p>
-        <p>EMAIL: CONTACT.MARIAPENALVER@GMAIL.COM</p> <br></br><br></br><br></br>
+        <p>EMAIL: MARIAAPENALVER@GMAIL.COM</p> <br></br><br></br><br></br>
         <p>PRODUCTION. PHOTOGRAPHY. WEB DEVELOPMENT</p>
 </div>
     </main>

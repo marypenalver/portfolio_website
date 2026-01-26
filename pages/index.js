@@ -36,7 +36,7 @@ export default function Home({images}) {
         {/* Top text */}
         <div className="absolute bottom-32 w-full text-center">
         <Link 
-            href="/portrait"
+            href="/production"
             className=" underline decoration-1 font-dropline bg-transparent rounded hover:bg-transparent transition inline-block"
           >
             PORTFOLIO 

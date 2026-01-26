@@ -100,6 +100,16 @@ export default function Production() {
             imageHeight: 1500
         },
         {
+            src: "/images/production/zohranmamdani/zohranmamdani.webp",
+            alt: "Zohran Mamdani x New York Magazine",
+            href: "/productionGalleries/zohranmamdani",
+            caption: "Zohran Mamdani x New York Magazine",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
             src: "/images/production/bowenyang/bowenCover.avif",
             alt: "Bowen Yang x Esquire",
             href: "/productionGalleries/bowenyang",
@@ -108,6 +118,16 @@ export default function Production() {
             maxWidth: "max-w-md", 
             imageWidth: 1000,
             imageHeight: 1500
+        },
+        {
+            src: "/images/production/thebeauty/thebeauty.webp",
+            alt: "The Beauty Cast x Vanity Fair",
+            href: "/productionGalleries/thebeauty",
+            caption: "'The Beauty' Cast x Vanity Fair", 
+            gridClasses: "col-span-3",
+            maxWidth: "max-w-md", 
+            imageWidth: 500,
+            imageHeight: 500
         },
         {
             src: "/images/production/adweek/adweek.jpg",

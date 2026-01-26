@@ -46,7 +46,15 @@ export default function nicholashoult({images}) {
       </div>
       ))}
       </section>
-
+      <p className="text-center text-xs font-mono tracking-widest uppercase whitespace-pre-wrap pt-[5%]">
+        <u>Photographer:</u> Mark Seliger<br></br>
+        <u>Executive Producer:</u> Ruth Levy <br></br>
+        <u>Producer:</u> Madi Overstreet<br></br> <br></br>
+        <u>Production Assistant:</u> Maria Penalver<br></br> <br></br>
+        <u>Client:</u> Jaeger-LeCoultre <br></br>
+        <u>Subject:</u> Nicholas Hoult<br></br>
+        <u>Post-Production:</u> Rachel Crowe
+      </p>  
       <Lightbox
         open={isOpen}
         index={index}
