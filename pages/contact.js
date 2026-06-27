@@ -75,7 +75,7 @@ export default function Contact() {
     <p className="hidden md:block absolute text-center bottom-10 font-dropline text-black text-xs mt-10">
             INSTAGRAM: MARIAPENALVERR
     </p>
-        <p className="hidden md:block absolute right-[42%] bottom-10 font-dropline text-xs mt-10">EMAIL: CONTACT.MARIAPENALVER@GMAIL.COM</p>
+        <p className="hidden md:block absolute right-[42%] bottom-10 font-dropline text-xs mt-10">EMAIL: MARIAAPENALVER@GMAIL.COM</p>
         <p className="hidden md:block absolute right-[10%] bottom-10 font-dropline text-xs mt-10">PRODUCTION. PHOTOGRAPHY. WEB DEVELOPMENT</p>
       {/* mobile only */}
       <div className="mt-6 flex flex-col gap-2 text-center text-xs font-dropline md:hidden">
