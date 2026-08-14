@@ -179,6 +179,26 @@ export default function Production() {
             imageWidth: 1000,
             imageHeight: 1500
         },
+        {
+            src: "/images/production/ZacPosen/zacPosen.webp",
+            alt: "Zac Posen x The New Yorker",
+            href: "/productionGalleries/zacposen",
+            caption: "Zac Posen x The New Yorker",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
+        {
+            src: "/images/production/BillyEichner/billyonbilly.avif",
+            alt: "Billy Eichner for Billy on Billy",
+            href: "/productionGalleries/billyeichner",
+            caption: "Billy Eichner for Billy on Billy",
+            gridClasses: "col-span-2 sm:col-span-3", 
+            maxWidth: "max-w-md", 
+            imageWidth: 1000,
+            imageHeight: 1500
+        },
     ];
 
     const [loaded, setLoaded] = useState(Array(images.length).fill(false));
