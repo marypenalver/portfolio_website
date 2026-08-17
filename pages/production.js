@@ -193,7 +193,7 @@ export default function Production() {
             src: "/images/production/BillyEichner/billyonbilly.avif",
             alt: "Billy Eichner for Billy on Billy",
             href: "/productionGalleries/billyeichner",
-            caption: "Billy Eichner for Billy on Billy",
+            caption: "Billy Eichner x Billy on Billy",
             gridClasses: "col-span-2 sm:col-span-3", 
             maxWidth: "max-w-md", 
             imageWidth: 1000,

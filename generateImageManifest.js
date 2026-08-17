@@ -35,10 +35,12 @@ folders.forEach(folder => {
   }
 
   const files = fs
-    .readdirSync(dir)
-    .filter(f => /\.(jpg|avif|jpeg|png|webp)$/i.test(f))
-    .sort()
-    .map(f => `/images/${folder}/${f}`); // ✅ prepend full path
+  .readdirSync(dir)
+  .filter(f => /\.(jpg|avif|jpeg|png|webp)$/i.test(f))
+  .sort((a, b) =>
+    a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+  )
+  .map(f => `/images/${folder}/${f}`); //  prepend full path
 
   const outputPath = path.join(process.cwd(), "data", `${folder}.json`);
   fs.writeFileSync(outputPath, JSON.stringify(files, null, 2));
